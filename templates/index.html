@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="static/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>Hudson.</h1>
+        </header>
+        <main>
+            <section class="intro">
+                <h2>Hello</h2>
+                <h1>I'm Adithya S</h1>
+                <p>a Web Developer</p>
+                <div class="buttons">
+                    <a href="#" class="btn">More About Me</a>
+                    <a href="#" class="btn">Get in Touch</a>
+                </div>
+            </section>
+            <section class="profile">
+                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
+                <a href="#" class="cv-button">Get My CV</a>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>

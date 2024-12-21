@@ -1,0 +1,156 @@
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: #2c2f33;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background: #ffffff;
+}
+
+.intro h2 {
+    color: #ff6f61;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #2c2f33;
+    margin: 15px 0;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 20px 0;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: #ff6f61;
+    border-radius: 25px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff3b28;
+    transform: scale(1.05);
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9fafb;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6f61;
+    margin-bottom: 20px;
+}
+
+.cv-button {
+    display: inline-block;
+    background: #2c2f33;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.cv-button:hover {
+    background: #4caf50;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background: #2c2f33;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li a {
+    color: #ff6f61;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ff3b28;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .buttons .btn {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    .profile {
+        margin: 10px;
+    }
+}
