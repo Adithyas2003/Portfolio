@@ -3,36 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background: url('static/img/background.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .navbar li {
+            margin: 0 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        h1 {
+            margin: 20px 0;
+            font-size: 2.5em;
+        }
+        p {
+            color: #666;
+        }
+        a {
+            text-decoration: none;
+            color: #3498db;
+        }
+    </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul>
+            <li><a href="\">Home</a></li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/works">Works</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/download_cv">Download CV</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <header>
-            <h1>Hudson.</h1>
-        </header>
-        <main>
-            <section class="intro">
-                <h2>Hello</h2>
-                <h1>I'm Adithya S</h1>
-                <p>a Web Developer</p>
-                <div class="buttons">
-                    <a href="#" class="btn">More About Me</a>
-                    <a href="#" class="btn">Get in Touch</a>
-                </div>
-            </section>
-            <section class="profile">
-                <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture">
-                <a href="#" class="cv-button">Get My CV</a>
-            </section>
-        </main>
-        <footer>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </footer>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello, I'm a product designer based in Somewhere.</p>
+        <a href="/about">More About Me</a>
     </div>
 </body>
 </html>
+"""
