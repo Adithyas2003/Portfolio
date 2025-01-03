@@ -4,64 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            background: url('static/img/background.jpeg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            text-align: center;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-        }
-        .navbar ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        .navbar li {
-            margin: 0 15px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            padding: 5px 10px;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-        .navbar a:hover {
-            background-color: #555;
-        }
-        h1 {
-            margin: 20px 0;
-            font-size: 2.5em;
-        }
-        p {
-            color: #666;
-        }
-        a {
-            text-decoration: none;
-            color: #3498db;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <nav class="navbar">
@@ -79,6 +22,21 @@
         <p>Hello, I'm a product designer based in Somewhere.</p>
         <a href="/about">More About Me</a>
     </div>
+    <div class="container1">
+        <!-- Profile Image Section -->
+        <div class="profile-image">
+            <img src="{{ url_for('static', filename='img/background.jpeg') }}" alt="Profile Image">
+        </div>
+    
+        <!-- About Me Text Section -->
+        <div>
+            <h1>About Me</h1>
+            <p>Hello! I'm a passionate product designer with a keen eye for detail and a drive for creating intuitive, user-centered designs. I specialize in designing digital products that enhance user experiences and bring ideas to life.</p>
+            <p>With years of experience in the industry, I have worked on diverse projects ranging from mobile apps to complex web platforms. I thrive on collaboration, innovation, and turning challenges into opportunities.</p>
+            <p>Feel free to explore my portfolio or <a href="contact">get in touch</a> to learn more about my work!</p>
+            <a class="button" href="download_cv">Download My CV</a>
+        </div>
+    </div>
+    
 </body>
 </html>
-"""
