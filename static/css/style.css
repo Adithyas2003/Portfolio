@@ -135,6 +135,55 @@
     height: 100%;
     object-fit: cover; /* Ensures the image is properly cropped */
 }
+/* Resume Section */
+.resume-section {
+    /* max-width: 1000px; */
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.resume-section h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Resume Preview Image */
+.resume-preview {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resume-image {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Download Button */
+.download-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #555;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {

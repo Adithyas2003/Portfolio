@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">My Portfolio</div>
         <ul>
-            <li><a href="\">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li><a href="/about">About Me</a></li>
             <li><a href="/works">Works</a></li>
             <li><a href="/contact">Contact</a></li>
@@ -19,24 +19,38 @@
     </nav>
     <div class="container">
         <h1>Welcome to My Portfolio</h1>
-        <p>Hello, I'm a product designer based in Somewhere.</p>
+        <p>Hello, I'm Adithya S.</p>
         <a href="/about">More About Me</a>
     </div>
     <div class="container1">
-        <!-- Profile Image Section -->
+       
         <div class="profile-image">
             <img src="{{ url_for('static', filename='img/background.jpeg') }}" alt="Profile Image">
         </div>
     
-        <!-- About Me Text Section -->
+       
         <div>
             <h1>About Me</h1>
-            <p>Hello! I'm a passionate product designer with a keen eye for detail and a drive for creating intuitive, user-centered designs. I specialize in designing digital products that enhance user experiences and bring ideas to life.</p>
-            <p>With years of experience in the industry, I have worked on diverse projects ranging from mobile apps to complex web platforms. I thrive on collaboration, innovation, and turning challenges into opportunities.</p>
-            <p>Feel free to explore my portfolio or <a href="contact">get in touch</a> to learn more about my work!</p>
-            <a class="button" href="download_cv">Download My CV</a>
+            <p>Hello! I'm a passionate full-stack web developer with a strong foundation in Python and a commitment to building intuitive, scalable, and efficient web applications. I specialize in combining both frontend and backend technologies to create seamless user experiences.</p>
+            <p>With my ongoing journey in web development, I’ve gained experience in building dynamic web applications using frameworks like Django, Flask, and React. I thrive on solving complex problems, working collaboratively, and continuously learning new technologies to stay ahead in the ever-evolving tech landscape.</p>
+            <p>Feel free to explore my portfolio or <a href="/contact">get in touch</a> to learn more about my work!</p>
         </div>
     </div>
-    
+
+  
+   
+    <div class="resume-section">
+        <h2>My Resume</h2>
+      
+        <div class="resume-preview">
+            <img src="{{ url_for('static', filename='img/Screenshot from 2025-01-04 13-24-56.png') }}" alt="Resume Preview" class="resume-image">
+        </div>
+
+        <p>Click the button below to download my full resume in PDF format.</p>
+
+        <div class="download-button">
+            <a href="{{ url_for('static', filename='ADITHYA S (Resume).pdf') }}" download class="button">Download My Resume</a>
+        </div>
 </body>
 </html>
+
