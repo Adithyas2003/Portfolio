@@ -25,7 +25,7 @@
     <div class="container1">
        
         <div class="profile-image">
-            <img src="{{ url_for('static', filename='img/background.jpeg') }}" alt="Profile Image">
+            <img src="{{ url_for('static', filename='img/172478180.jpeg') }}" alt="Profile Image">
         </div>
     
        
@@ -51,6 +51,65 @@
         <div class="download-button">
             <a href="{{ url_for('static', filename='ADITHYA S (Resume).pdf') }}" download class="button">Download My Resume</a>
         </div>
+
+        <section id="projects">
+            <div class="projects-container">
+                <h2>My Projects</h2>
+                <p>Click on a project image to explore it in detail.</p>
+                <div class="project-grid">
+                    <div class="project">
+                        <a href="https://github.com/Adithyas2003/cabBooking.git" target="_blank">
+                            <img src="{{ url_for('static', filename='img/stock-photo-smiling-blonde-woman-eyeglasses-talking-smartphone-checking-wristwatch-while-standing.jpeg') }}" alt="Project 1" class="project-image">
+                        </a>
+                        <p>Project 1</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/Adithyas2003/miniproject.git" target="_blank">
+                            <img src="{{ url_for('static', filename='img/stock-photo-smiling-blonde-woman-eyeglasses-talking-smartphone-checking-wristwatch-while-standing.jpeg') }}" alt="Project 2" class="project-image">
+                        </a>
+                        <p>Project 2</p>
+                    </div>
+                    <div class="project">
+                        <a href="https://github.com/Adithyas2003/miniproject.git" target="_blank">
+                            <img src="{{ url_for('static', filename='img/stock-photo-smiling-blonde-woman-eyeglasses-talking-smartphone-checking-wristwatch-while-standing.jpeg') }}" alt="Project 3" class="project-image">
+                        </a>
+                        <p>Project 3</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="contact-container">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out through any of the channels below:</p>
+                <div class="contact-info">
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:adathyas49@gmail.com">adathyas49@gmail.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:9497733376">+91 94977 33376</a></li>
+                        <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/Adithyas2003/" target="_blank">github.com/Adithyas2003</a></li>
+                    </ul>
+                </div>
+                <form action="contact_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        
 </body>
 </html>
 
