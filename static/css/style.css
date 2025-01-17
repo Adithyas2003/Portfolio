@@ -1,5 +1,5 @@
-   /* General Body Styling */
-   body {
+/* General Body Styling */
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -88,9 +88,9 @@
     max-width: 1000px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex; /* Use flexbox */
-    align-items: center; /* Align items vertically */
-    gap: 30px; /* Space between image and text */
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 
 .container1 h1 {
@@ -133,11 +133,11 @@
 .profile-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image is properly cropped */
+    object-fit: cover;
 }
+
 /* Resume Section */
 .resume-section {
-    /* max-width: 1000px; */
     width: 100%;
     margin: 20px auto;
     padding: 20px;
@@ -152,9 +152,11 @@
     text-align: center;
     margin-bottom: 20px;
 }
-.resume-section p{
+
+.resume-section p {
     text-align: center;
 }
+
 /* Resume Preview Image */
 .resume-preview {
     text-align: center;
@@ -186,6 +188,7 @@
 .button:hover {
     background-color: #555;
 }
+
 /* Contact section */
 #contact {
     background-color: #f7f9fc;
@@ -228,8 +231,8 @@
 .contact-info a:hover {
     text-decoration: underline;
 }
+
 /* Project Section */
-/* Projects Section */
 #projects {
     background-color: #f7f9fc;
     padding: 50px 20px;
@@ -278,7 +281,6 @@
     font-size: 1.1rem;
     color: #333;
 }
-
 
 /* Form styles */
 form {
@@ -333,10 +335,11 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    /* Navbar */
     .navbar {
         flex-direction: column;
-        text-align: center;
+        padding: 15px 0;
     }
 
     .navbar ul {
@@ -348,20 +351,138 @@ button:hover {
         margin: 10px 0;
     }
 
+    /* Main Container */
     .container h1 {
         font-size: 2.5rem;
     }
 
+    /* About Me Section */
     .container1 {
-        flex-direction: column; /* Stack the profile and text vertically on smaller screens */
+        flex-direction: column;
         text-align: center;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
     }
 
     .container1 h1 {
         font-size: 2rem;
     }
 
-    .profile-image {
-        margin: 0 auto 20px; /* Center the profile image on smaller screens */
+    /* Project Section */
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    /* Contact Form */
+    form {
+        padding: 20px;
+        margin: 0 15px;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .container {
+        padding: 30px 20px;
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .container1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+    }
+
+    .container1 {
+        padding: 20px 10px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .project-image {
+        width: 100%;
+    }
+
+    form {
+        padding: 10px;
+        margin: 0 10px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+
